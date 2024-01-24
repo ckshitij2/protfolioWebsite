@@ -69,10 +69,10 @@ $mail2->Password = $_ENV['MAIL_PASSWORD'];
 $mail2->setFrom($emailFrom, $nameFrom);
 $mail2->addAddress($senderEmail, $senderName);
 
-$mail2->Subject = "Thankyou for contacting " . $senderName;
+$mail2->Subject = "Thankyou for contacting " . $nameFrom;
 
 $message2 = '<html><body>';
-$message2 = '<p>Thankyou for contacting Harsh Jain. I will respond to your query as soon as possible. Below we have attached the copy of contact form you have filled.</p><br/>';
+$message2 = '<p>Thankyou for contacting Kshitij Chauhan. I will respond to your query as soon as possible. Below we have attached the copy of contact form you have filled.</p><br/>';
 $message2 .= '<table rules="all" style="border:1px solid #666;width:300px;" cellpadding="10">';
 $message2 .= ($senderName) ? "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . $senderName . "</td></tr>" : '';
 $message2 .= ($senderEmail) ?"<tr><td><strong>Email:</strong> </td><td>" . $senderEmail . "</td></tr>" : '';
